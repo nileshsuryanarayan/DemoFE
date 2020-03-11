@@ -1,24 +1,11 @@
 <header>
   <!-- List of menus and sub-menus -->
   <ul>
-    <li *ngFor="let menu of menus"><a> {{menu.name | uppercase}} </a>
-      <div class="dropdown">
-        <ul *ngIf="menu.subMenus" class="dropdown-content">
-          <li *ngFor="let submenu of menu.subMenus" class="sub-menu"> {{submenu.name | uppercase}} </li>
-        </ul>
-      </div>
+    <li *ngFor="let menu of menus" class="menu-item">
+      <a class="menu-name"> {{menu.name | uppercase}} </a>
+      <ul *ngIf="menu.subMenus" class="dropdown-content">
+        <li *ngFor="let submenu of menu.subMenus" class="sub-menu"> {{submenu.name | uppercase}} </li>
+      </ul>
     </li>
   </ul>
 </header>
-<br>
-<br>
-<div class="navbar">
-  <a href="" *ngFor="let menu of menus"> {{menu.name | uppercase}} <i class="fa fa-caret-down"></i>
-    <div *ngIf="menu.subMenus" class="dropdown">
-        <i class="fa fa-caret-down"></i>
-      <div class="dropdown-content">
-        <a href="#" *ngFor="let submenu of menu.subMenus">{{submenu.name | uppercase}}</a>
-      </div>
-    </div>
-  </a>
-</div>
