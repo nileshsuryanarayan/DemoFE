@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { MenuService } from './services/menu.service';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeModule } from './home/home.module';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    UserModule
   ],
   providers: [MenuService], //
   bootstrap: [AppComponent]
