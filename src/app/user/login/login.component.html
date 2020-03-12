@@ -1,5 +1,7 @@
-<form name="login" class="" action="" [formGroup]="loginForm" (submit)="validateLogin()">
-    <input type="text" name="userId" class="text-box">
-    <input type="password" name="password" class="text-box">
+<form name="login" class="container" action="" [formGroup]="loginForm" (submit)="validateLogin()">
+    <label>Username</label>
+    <input type="text" name="userId" class="login-textbox">
+    <label>Password</label>
+    <input type="password" name="password" class="login-textbox">
     <input type="submit" name="submit" class="button" value="Login">
 </form>

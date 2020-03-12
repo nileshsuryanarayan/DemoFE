@@ -4,7 +4,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
     selector: 'login',
     templateUrl: './login.component.html',
-    styleUrls: []
+    styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
 
