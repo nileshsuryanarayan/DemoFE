@@ -12,10 +12,13 @@ import { MenuService } from './services/menu.service';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 import { UserModule } from './user/user.module';
+import { RegistrationModule } from './user/registration/registration.module';
+import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
-<form name="register" class="" action="" [formGroup]="registrationForm" (submit)="validateForm()">
-    <input type="text" name="firstname" class="text-box">
-    <input type="text" name="lastname" class="text-box">
-    <input type="text" name="email" class="text-box">
-    <input type="text" name="contact" class="text-box">
-    <input type="text" name="pan" class="text-box">
-    <input type="submit" name="submit" class="button" value="Register">
-</form>
+<div class="tab-header">
+    <a routerLinkActive="active" routerLink="/stepone" class="tab-head">Contact details</a>
+    <a routerLinkActive="active" routerLink="/steptwo" class="tab-head">Identity</a>
+    <a routerLinkActive="active" routerLink="/stepthree" class="tab-head">Identity proof</a>
+</div>
+<div class="container registration-box">
+    <router-outlet></router-outlet>
+</div>
