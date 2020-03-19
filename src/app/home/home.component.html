@@ -2,7 +2,11 @@
 <br>
 <br>
 <p>Single level routing works!</p>
-<a routerLink="static/contact-us" routerLinkActive="active">Contact us</a>
+<a routerLink="static/contact-us" routerLinkActive="active" class="button">Contact us</a>
 <br>
 <br>
 <router-outlet></router-outlet>
+<br>
+<br>
+<button class="button" (click)="goPreviousPage()">&nbsp;&nbsp;<<&nbsp;&nbsp;</button> &nbsp;&nbsp;
+<button class="button" (click)="goForwardPage()">&nbsp;&nbsp;>>&nbsp;&nbsp;</button>
