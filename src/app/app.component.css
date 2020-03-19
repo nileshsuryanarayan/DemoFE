@@ -1,6 +1,6 @@
 #skip-content {
   background-color: #0089d0;
-  padding: 5px 0px;
+  padding: 8px 0px;
   width: 100%;
 }
 #skip-content-text {
@@ -18,24 +18,25 @@
   background-color: #10486b;
 }
 
-/* ul {
+ ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
-li.menu-item { float: left; }
+li { /* li.menu-item */
+  float: left;
+}
 
-li.menu-item a {
+li a { /* li.menu-item a */
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
+/*
 li.menu-item a:hover {
   background-color: #4CAF50;
   color: white;
