@@ -9,28 +9,19 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuService } from './services/menu.service';
-import { HomeComponent } from './home/home.component';
-import { HomeModule } from './home/home.module';
-import { UserModule } from './user/user.module';
-import { RegistrationModule } from './user/registration/registration.module';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
+import { HomeModule } from './home/home.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HomeModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(),
-    UserModule
-  ],
-  providers: [MenuService], //
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, CommonModule, AppRoutingModule, HomeModule, ReactiveFormsModule,
+            HttpClientModule, BrowserAnimationsModule, ToastrModule.forRoot()],
+  providers: [MenuService],
+  bootstrap: [AppComponent],
+  exports: [PageNotFoundComponent]
 })
-export class AppModule { }
+export class AppModule {}
