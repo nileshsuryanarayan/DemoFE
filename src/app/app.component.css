@@ -1,4 +1,24 @@
-ul {
+#skip-content {
+  background-color: #0089d0;
+  padding: 5px 0px;
+  width: 100%;
+}
+#skip-content-text {
+  text-decoration: none;
+  color: white;
+  margin: 0px 5px;
+}
+.content-right {
+  text-align: right;
+}
+
+.row {
+  width: 100%;
+  height: 50px;
+  background-color: #10486b;
+}
+
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -55,4 +75,4 @@ li.menu-item a:hover + .dropdown {
 }
 
 .menu-name:hover + .dropdown-content { display: block; }
-.dropdown-content:hover { display: block; }
+.dropdown-content:hover { display: block; } */

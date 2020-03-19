@@ -1,5 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
+/*
+Use only below color in the app
+
+#0089d0 - light blue
+#10486b - dark blue
+#ee7939 - orange
+#373e42 - dark grey
+
+*/
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    box-sizing: content-box;
+}
+
 .form-label {
     font-weight: bold;
     color: black;
@@ -20,10 +39,15 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #4CAF50;
+    background-color: #0089d0; /* Make this color custom */
     font-weight: bold;
     color: white;
     text-decoration: none;
+}
+
+.button:hover {
+    background-color: #10486b;
+    cursor: pointer;
 }
 
 .container {
