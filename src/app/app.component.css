@@ -8,6 +8,9 @@
   color: white;
   margin: 0px 5px;
 }
+#skip-content-text:hover {
+  text-decoration: underline;
+}
 .content-right {
   text-align: right;
 }
@@ -18,23 +21,30 @@
   background-color: #10486b;
 }
 
- ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
+#div-socialicons {
+  display: inline-block;
+  width: 15%;
 }
 
-li { /* li.menu-item */
-  float: left;
+#div-indirect {
+  display: inline-block;
+  height: inherit;
+  vertical-align: middle;
 }
 
-li a { /* li.menu-item a */
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+#div-language-drop {
+  display: inline-block;
+  width: 12%;
+  height: inherit;
+  vertical-align: middle;
+  margin-left: 30px;
+}
+#div-group-websites {
+  display: inline-block;
+  width: 12%;
+  height: inherit;
+  vertical-align: middle;
+  margin-left: 30px;
 }
 /*
 li.menu-item a:hover {

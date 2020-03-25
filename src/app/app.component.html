@@ -13,19 +13,16 @@
   <a href="#" id="skip-content-text">Skip to main content</a>
 </div>
 <div class="row">
-  <div class="social-icons">
-    <!-- first 3 columns, bootstap grid model -->
-    <ul>
-      <li><a aria-label="Facebook" href="https://www.facebook.com/bseindia" target="_blank" class="social-icon" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-      <li><a aria-label="twitter" href="#" onclick="Display(1);" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-      <li><a aria-label="Linkedin" href="https://www.linkedin.com/company/bombay-stock-exchange-limited?trk=cp_followed_name_bombay-stock-exchange-limited" target="_blank" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-
-      <li><a aria-label="RSS" data-toggle="modal" data-target="#rss1" href="#" class="social-icon" title="RSS"><i class="fa fa-rss"></i></a></li>
-      <li><a aria-label="Youtube" href="https://www.youtube.com/user/BSEworld" target="_blank" class="social-icon" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-  </ul>
+  <div id="div-socialicons">
+    <social-icons></social-icons>
   </div>
-  <div>
-    <!-- last 9 columns, bootstap grid model -->
-  </div>
+  <span id="div-indirect">
+    <indirect-links></indirect-links>
+  </span>
+  <span id="div-language-drop">
+    <language></language>
+  </span>
+  <span id="div-group-websites">
+    <group-websites></group-websites>
+  </span>
 </div>
-<router-outlet></router-outlet>
