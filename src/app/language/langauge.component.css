@@ -4,7 +4,6 @@
 }
 
 .dropdown-menu {
-    display: none;
     width: 120px;
     max-width: 120px;
     list-style: none;
@@ -25,10 +24,6 @@
 }
 
 .btn-dropdown:hover { cursor: pointer; }
-
-.btn-dropdown:hover + .dropdown-menu {
-    display: block;
-}
 
 .menu-item:hover {
     cursor: pointer;

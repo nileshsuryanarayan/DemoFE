@@ -8,6 +8,7 @@ import { DirectLinksComponent } from "./directlinks/directlinks.component";
 import { IndirectLinksComponent } from "./indirectlinks/indirectlinks.component";
 import { LanguageComponent } from './language/langauge.component';
 import { GroupWebsitesComponent } from './groupwebsites/groupwebsites.component';
+import { BSEHeadComponent } from './bsehead/bsehead.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GroupWebsitesComponent } from './groupwebsites/groupwebsites.component'
     DirectLinksComponent,
     IndirectLinksComponent,
     LanguageComponent,
-    GroupWebsitesComponent
+    GroupWebsitesComponent,
+    BSEHeadComponent
   ],
   imports: [BrowserModule, CommonModule, StaticModule],
   providers: [],

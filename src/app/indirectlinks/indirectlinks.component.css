@@ -19,4 +19,9 @@ ul {
     text-decoration: none;
     font-size: 12px;
   }
+
+  li a:hover { cursor: pointer; }
   
+  #bse-payment{
+    color: #FFFF00;
+  }
