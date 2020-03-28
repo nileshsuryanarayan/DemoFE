@@ -1,18 +1,31 @@
-<div id="skip-content" class="content-right">
-  <a href="#" id="skip-content-text">Skip to main content</a>
+<div id='skip-content' class='content-right'>
+  <a href='#' id='skip-content-text'>Skip to main content</a>
 </div>
-<div class="row">
-  <div id="div-socialicons">
+<div class='row'>
+  <div id='div-socialicons'>
     <social-icons></social-icons>
   </div>
-  <span id="div-indirect">
-    <indirect-links></indirect-links>
+  <span id='div-indirect'>
+    <ul>
+      <li><a routerLinkActive="active" routerLink="market/MarketInfo/notices">Notices |</a></li>
+      <li><a routerLinkActive="active" routerLink="market/MarketInfo/media-release">Media Release |</a></li>
+      <li><a routerLinkActive="active" routerLink="market/MarketInfo/listofholis">Trading Holidays |</a></li>
+      <li><a routerLinkActive="active" routerLink="/login">BSEPlus |</a></li>
+      <li><a routerLinkActive="active" routerLink="/login" id="bse-payment">Payments to BSE |</a></li>
+      <li><a routerLinkActive="active" routerLink="static/about/contact-us">Contact us |</a></li>
+      <li><a routerLinkActive="active" routerLink="static/about/feedback">Feedback |</a></li>
+      <li><a routerLinkActive="active" routerLink="/login">Ask Motabhai</a></li>
+    </ul>
   </span>
-  <span id="div-language-drop">
+  <span id='div-language-drop'>
     <language></language>
   </span>
-  <span id="div-group-websites">
+  <span id='div-group-websites'>
     <group-websites></group-websites>
   </span>
 </div>
 <bse-head></bse-head>
+<div id='router-outlet-container'>
+  <router-outlet></router-outlet>
+</div>
+<bse-footer></bse-footer>

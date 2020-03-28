@@ -1,0 +1,12 @@
+<div class='row' id='row'>
+    <direct-links></direct-links>
+</div>
+<p>Single level routing works!</p>
+<a routerLink='static/about/contact-us' routerLinkActive='active' class='button'>Contact us</a>
+<br>
+<br>
+<router-outlet></router-outlet>
+<br>
+<br>
+<button class='button' (click)='goPreviousPage()'>&nbsp;&nbsp;<<&nbsp;&nbsp;</button> &nbsp;&nbsp;
+<button class='button' (click)='goForwardPage()'>&nbsp;&nbsp;>>&nbsp;&nbsp;</button>

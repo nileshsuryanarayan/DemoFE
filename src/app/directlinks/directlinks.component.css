@@ -1,0 +1,28 @@
+.row {
+    height: fit-content;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  
+  li {
+    /* li.menu-item */
+    float: left;
+    color: white;
+  }
+  
+  li a {
+    /* li.menu-item a */
+    display: block;
+    text-align: center;
+    padding: 15px 6px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+  }
+  #home {
+      background-color: #EE7939;
+  }

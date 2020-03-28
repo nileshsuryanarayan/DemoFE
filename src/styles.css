@@ -11,53 +11,59 @@ Use only below color in the app
 */
 
 body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 13px;
-    box-sizing: content-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  box-sizing: content-box;
 }
 
 .form-label {
-    font-weight: bold;
-    color: black;
-    margin: 5px;
+  font-weight: bold;
+  color: black;
+  margin: 5px;
 }
 
 .textbox {
-    padding: 12px 20px;
-    margin: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .button {
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #0089d0; /* Make this color custom */
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #0089d0; /* Make this color custom */
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .button:hover {
-    background-color: #10486b;
-    cursor: pointer;
+  background-color: #10486b;
+  cursor: pointer;
 }
 
 .container {
-    border-radius: 5px;
-    border: 1px solid #888888;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: -2px 2px 5px #888888;
+  border-radius: 5px;
+  border: 1px solid #888888;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: -2px 2px 5px #888888;
 }
 .btn-dropdown {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
+}
+
+.row {
+  width: 100%;
+  background-color: #10486b;
+  color: white;
 }
