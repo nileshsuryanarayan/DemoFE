@@ -1,11 +1,18 @@
-<header>
-  <!-- List of menus and sub-menus -->
-  <ul>
-    <li *ngFor="let menu of menus" class="menu-item">
-      <a class="menu-name"> {{menu.name | uppercase}} </a>
-      <ul *ngIf="menu.subMenus" class="dropdown-content">
-        <li *ngFor="let submenu of menu.subMenus" class="sub-menu"> {{submenu.name | uppercase}} </li>
-      </ul>
-    </li>
-  </ul>
-</header>
+<div id="skip-content" class="content-right">
+  <a href="#" id="skip-content-text">Skip to main content</a>
+</div>
+<div class="row">
+  <div id="div-socialicons">
+    <social-icons></social-icons>
+  </div>
+  <span id="div-indirect">
+    <indirect-links></indirect-links>
+  </span>
+  <span id="div-language-drop">
+    <language></language>
+  </span>
+  <span id="div-group-websites">
+    <group-websites></group-websites>
+  </span>
+</div>
+<bse-head></bse-head>

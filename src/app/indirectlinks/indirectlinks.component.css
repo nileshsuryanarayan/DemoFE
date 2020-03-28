@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  
+  li {
+    /* li.menu-item */
+    float: left;
+    color: white;
+  }
+  
+  li a {
+    /* li.menu-item a */
+    display: block;
+    text-align: center;
+    padding: 0px 2px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  li a:hover { cursor: pointer; }
+  
+  #bse-payment{
+    color: #FFFF00;
+  }

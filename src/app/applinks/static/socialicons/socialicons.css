@@ -1,0 +1,22 @@
+.social-icons { display: inline; }
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+li {
+  /* li.menu-item */
+  float: left;
+}
+
+li a {
+  /* li.menu-item a */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 5px;
+  text-decoration: none;
+}
