@@ -1,0 +1,49 @@
+[
+    {
+        "menuName": "Home",
+        "route": "/",
+        "submenus": [
+            {
+                "submenuName": ""
+            },
+            {
+                "submenuName": ""
+            },
+            {
+                "submenuName": ""
+            }
+        ]
+    },
+    {
+        "menuName": "About BSE",
+        "route": "/static/about"
+    },
+    {
+        "menuName": "Investor Relations",
+        "route": "/**"
+    },
+    {
+        "menuName": "Markets",
+        "route": ""
+    },
+    {
+        "menuName": "Public Issues",
+        "route": ""
+    },
+    {
+        "menuName": "Corporates",
+        "route": ""
+    },
+    {
+        "menuName": "Members",
+        "route": ""
+    },
+    {
+        "menuName": "Investors",
+        "route": ""
+    },
+    {
+        "menuName": "Training and Certification",
+        "route": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "menuName": "Menu",
+        "route": "",
+        "submenus": [
+            {
+                "submenuName": ""
+            },
+            {
+                "submenuName": ""
+            },
+            {
+                "submenuName": ""
+            }
+        ]
+    },
+    {
+        "menuName": "Markets",
+        "route": "/static/about"
+    },
+    {
+        "menuName": "Equity",
+        "route": "/**"
+    },
+    {
+        "menuName": "Derivatives",
+        "route": ""
+    },
+    {
+        "menuName": "Indices",
+        "route": ""
+    },
+    {
+        "menuName": "Currency Derivates",
+        "route": ""
+    },
+    {
+        "menuName": "IRD",
+        "route": ""
+    },
+    {
+        "menuName": "Debt",
+        "route": ""
+    },
+    {
+        "menuName": "SLB",
+        "route": ""
+    },
+    {
+        "menuName": "ETFs/Mutual Funds",
+        "route": ""
+    },
+    {
+        "menuName": "Comodity Derivatives",
+        "route": ""
+    },
+    {
+        "menuName": "Market Data",
+        "route": ""
+    },
+    {
+        "menuName": "Notices",
+        "route": ""
+    }
+]
