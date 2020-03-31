@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Menu } from 'src/app/app-models/Menu.model';
-import NoticesLinks from './NoticesLinks.json';
+import Links from './Links.json';
 
 @Component({
     selector: 'notices',
@@ -9,10 +9,10 @@ import NoticesLinks from './NoticesLinks.json';
 })
 export class NoticesComponent {
 
-    private noticesMenus: Menu[];
+    Menus: Menu[];
 
     ngOnInit() {
-        this.noticesMenus = NoticesLinks;
-        console.log(NoticesLinks);
+        this.Menus = Links;
+        // console.log(Links);
     }
 }

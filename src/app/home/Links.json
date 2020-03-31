@@ -12,7 +12,8 @@
             {
                 "submenuName": ""
             }
-        ]
+        ],
+        "id": "default"
     },
     {
         "menuName": "About BSE",

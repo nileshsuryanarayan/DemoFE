@@ -16,7 +16,8 @@
     },
     {
         "menuName": "Markets",
-        "route": "/static/about"
+        "route": "/static/about",
+        "id": "default"
     },
     {
         "menuName": "Equity",

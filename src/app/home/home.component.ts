@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { Location } from '@angular/common';
 import { Menu } from '../app-models/Menu.model';
-import HomeLinks from './HomeLinks.json';
+import Links from './Links.json';
 
 @Component({
     selector: 'home-component',
@@ -10,7 +10,7 @@ import HomeLinks from './HomeLinks.json';
 })
 export class HomeComponent {
 
-    private homeMenus: Menu[];
+    private Menus: Menu[];
 
     constructor(private appNavigation: Location) {}
 
@@ -25,7 +25,7 @@ export class HomeComponent {
     }
 
     ngOnInit() {
-        this.homeMenus = HomeLinks;
+        this.Menus = Links;
     }
 
 }

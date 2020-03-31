@@ -1,0 +1,42 @@
+[
+    {
+        "menuName": "Menu",
+        "route": "",
+        "submenus": [
+            {
+                "submenuName": ""
+            },
+            {
+                "submenuName": ""
+            },
+            {
+                "submenuName": ""
+            }
+        ]
+    },
+    {
+        "menuName": "About BSE",
+        "route": "/static/about",
+        "id": "default"
+    },
+    {
+        "menuName": "Corporate Structures",
+        "route": "/**"
+    },
+    {
+        "menuName": "Media",
+        "route": ""
+    },
+    {
+        "menuName": "Events",
+        "route": ""
+    },
+    {
+        "menuName": "BSE and Sustainability",
+        "route": ""
+    },
+    {
+        "menuName": "Group Companies",
+        "route": ""
+    }
+]

@@ -2,13 +2,13 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
 
 const directLinks: Routes = [
-    { path: 'static', loadChildren: '../indirectlinks/indirectlinks.module#IndirectLinksModule' },
-    { path: 'market', loadChildren: '../indirectlinks/indirectlinks.module#IndirectLinksModule' },
-    { path: 'about', loadChildren: '../applinks/static/about/about.module#AboutModule' }
+    { path: 'static', loadChildren: '../static/static.module#StaticModule' },
+    { path: 'market', loadChildren: '../market/market.module#MarketModule' },
+    { path: 'about', loadChildren: '../static/about/about.module#AboutModule' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(directLinks)],
+    imports: [RouterModule.forChild(directLinks)],
     exports: [RouterModule]
 })
 export class DirectLinksRoutingModule {}
