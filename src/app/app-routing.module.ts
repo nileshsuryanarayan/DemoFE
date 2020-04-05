@@ -6,7 +6,7 @@ import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 const appRoutes: Routes = [
   {
     path: 'static',
-    loadChildren: './static/static.module#StaticModule',
+    loadChildren: './static/static.module#StaticModule'
   },
   {
     path: 'market',

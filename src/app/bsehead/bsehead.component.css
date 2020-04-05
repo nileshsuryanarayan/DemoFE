@@ -1,4 +1,5 @@
 #bse-head {
+<<<<<<< HEAD
     width: 100%;
     height: 130px;
     background-color: blanchedalmond;
@@ -135,3 +136,144 @@ background-color:orangered;
 }
 
 
+=======
+  width: 100%;
+  height: 130px;
+  padding: 20px 10px;
+}
+
+#div-bselogo {
+  display: inline-block;
+}
+.img-bselogo {
+}
+.img2 {
+  /* width: 40%;
+  height: 70%; */
+}
+
+.div3 {
+  width: 30%;
+  height: 70%;
+  display: inline-block;
+  margin: 19px;
+}
+
+#cars {
+  display: inline-block;
+  padding: 2px;
+  width: 160px;
+  background-color: black;
+  color: white;
+}
+.para0 {
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #10486b;
+  font-weight: bold;
+}
+
+.div4 {
+  width: 30%;
+  height: 70%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+.num {
+  display: block;
+
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.num1 {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: red;
+}
+
+.rose {
+  width: 40%;
+  height: 100%;
+  float: right;
+  text-align: left;
+}
+
+p {
+  margin: 5px;
+}
+
+.topnav a,
+.topnav input[type=text],
+.topnav .search-container button {
+  float: none;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+.topnav input[type=text] {
+  font-size: 30px;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #12354a;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+li {
+  display: inline-block;
+}
+a {
+  color: white;
+  font-size: 15px;
+  margin: 5px;
+}
+a:hover {
+  color: red;
+}
+
+#home {
+  background-color: orangered;
+}
+
+#home:hover {
+  color: yellow;
+}
+
+.middle {
+  width: 100%;
+  height: 700px;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.first {
+  width: 50%;
+  height: 15%;
+  background-color: white;
+  margin-left: 90px;
+  display: inline-block;
+}
+.second {
+  width: 20%;
+  height: 15%;
+  background-color: white;
+  display: inline-block;
+  float: right;
+  margin-right: 90px;
+}
+
+.img0 {
+  width: 100%;
+  height: 100%;
+}
+>>>>>>> e03583f879d23b8d0a24eeec6f6abf6b491cabc9

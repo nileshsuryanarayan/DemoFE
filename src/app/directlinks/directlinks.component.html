@@ -1,11 +1,5 @@
-<ul>
-    <li><a id='home'>Home</a></li>
-    <li><a>About BSE</a></li>
-    <li><a>Investor Relations</a></li>
-    <li><a>Markets</a></li>
-    <li><a>Public Issues</a></li>
-    <li><a>Corporates</a></li>
-    <li><a>Members</a></li>
-    <li><a>Investors</a></li>
-    <li><a>Training & Certification</a></li>
+<ul *ngIf="menus">
+    <li *ngFor="let menu of menus">
+        <a href="{{menu.route}}" id="{{menu.id}}">{{menu.menuName}}</a>
+    </li>
 </ul>
