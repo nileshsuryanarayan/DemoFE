@@ -1,12 +1,82 @@
 <div class='row' id='row'>
     <direct-links [menus]="Menus"></direct-links>
 </div>
-<p>Single level routing works!</p>
-<a routerLink='static/about/contact-us' routerLinkActive='active' class='button'>Contact us</a>
-<br>
-<br>
-<router-outlet></router-outlet>
-<br>
-<br>
-<button class='button' (click)='goPreviousPage()'>&nbsp;&nbsp;<<&nbsp;&nbsp;</button> &nbsp;&nbsp;
-<button class='button' (click)='goForwardPage()'>&nbsp;&nbsp;>>&nbsp;&nbsp;</button>
+<div id="home-container">
+    <div id="market" class="internal">
+        <div id="graph">
+            <div class="graph-slide">
+                <div id="graph-slid-head">
+                    <span id="market-logo" class="block">&nbsp;</span>
+                    <span id="date-time" class="text-right block">{{date}}&nbsp;|&nbsp;{{time}}&nbsp;|&nbsp;{{marketStatus}}</span>
+                </div>
+                <graph></graph>
+            </div>
+            <div class="slider-bottom">
+                <a class="button">Sensex View</a>
+                &nbsp;
+                <a class="button">Market Watch</a>
+            </div>
+        </div>
+        <div id="data-table"></div>
+    </div>
+    <div id="bse" class="internal">
+        <div id="bse-news" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div id="image-container" class="carousel-inner">
+                <div class="item active">
+                    <div>
+                        <img src="../../assets/bse-logo.png" style="width:100%; height: 300px;">
+                    </div>
+                    <div>
+                        <h2>Heading 1</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../../assets/bse.jpg" style="width:100%; height: 300px;">
+                    </div>
+                    <div>
+                        <h2>Heading 2</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../../assets/spbse.png" style="width:100%; height: 300px;">
+                    </div>
+                    <div>
+                        <h2>Heading 3</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../../assets/errorimage.png" style="width:100%; height: 300px;">
+                    </div>
+                    <div>
+                        <h2>Heading 4</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bse-startup">
+            <div class="bannerbotpad">
+                <a href="https://www.startupsbse.com" target="_blank">
+                    <img src="../../assets/STP_Banner.jpg" alt="BSE Startups Platform" title="BSE Startups Platform">
+                </a>
+            </div>
+            <div class="bannerbotpad">
+                <a href="https://membership.bseindia.com" target="_blank">
+                    <img src="../../assets/StarMFWebBanner_Home.jpg" alt="Star MF WebBanner" title="Star MFWeb Banner">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

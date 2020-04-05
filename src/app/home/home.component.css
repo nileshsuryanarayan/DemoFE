@@ -1,0 +1,116 @@
+#home-container {
+    width: 100%;
+    height: fit-content;
+    /* padding: 2%; */
+    background-color: gray;
+}
+
+#market {
+    display: inline-block;
+    width: 48%;
+    height: fit-content;
+    /* background-color: khaki; */
+}
+
+#bse {
+    display: inline-block;
+    width: 48%;
+    height: fit-content;
+    background-color: lightcoral;
+}
+
+.internal {
+    margin: 1%;
+}
+
+#graph {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.button {
+    padding: 6px 3px;
+    background-color: #0977f5;
+    color: white;
+}
+
+#data-table {
+    width: 100%;
+    height: 300px;
+    background-color: lightcoral;
+    margin-bottom: 20px;
+}
+
+#bse-news {
+    width: 100%;
+    height: fit-content; /* 400px */
+    background-color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#bse-startup {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+    min-height: 150px;
+    height: 100%;
+    padding-top: 13px;
+    padding-bottom: 1px;
+}
+.slider-bottom {
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+}
+
+#graph-slid-head {
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(220, 245, 184); */
+}
+
+.text-right {
+    text-align: right;
+}
+.block {
+    display: inline-block;
+}
+#date-time {
+    width: 30%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    /* height: inherit; */
+}
+#market-logo {
+    width: 60%;
+    height: inherit;
+    margin: 0%;
+}
+
+/* .slides { 
+    display: none;
+    width: inherit;
+    height: inherit;
+} */
+
+#image-container {
+    width: inherit;
+    height: 400px; /*400px*/
+}
+
+h2, p {
+    margin: 5px 15px;
+}
+.bannerbotpad {
+    display: inline-block;
+    width: 50%;
+}
+
+a img {
+    width: 90%;
+    margin: 15px;
+}
