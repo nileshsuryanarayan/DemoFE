@@ -1,12 +1,153 @@
-<div class='row' id='row'>
-    <direct-links></direct-links>
+
+
+
+<div class="middle">
+    <div class="first"></div>
+    <div class="second"> 
+        <a href=""><img src="../../assets/bhav.png"  class="img0"></a>
+    </div>
+
+    <div class="graph">
+        <div class="graph2"></div>
+        <div class="graph3">
+            <div class="header0">
+                <ul>
+                    <li class="list1"><a>indices</a></li>
+                    <li class="list"><a>Gainers</a></li>
+                    <li class="list"><a>Losers</a></li>
+                    <li class="list"><a>Top Turnover</a></li>
+                    <li class="list"><a>rending</a><li>
+                    <li class="list"><a>listings</a></li>                 
+                      <li class="list"><a>CorporateAnnouncement</a></li>
+                </ul>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                      <th>Index</th>
+                      <th>Current</th>
+                      <th>Pt.Change</th>
+                      <th>%Change</th>
+                    </tr>
+                    <tr>
+                      <td><a class="links">S&P BSE SENSEX</a></td>
+                      <td>26,265.31</td>
+                      <td class="red">-1203.66</td>
+                      <td class="red">-4.08</td>
+                    </tr>
+                    <tr>
+                      <td><a class="links">S&P BSE SENSEX 50</a></td>
+                      <td>8,652.71</td>
+                      <td class="red">-348.21</td>
+                      <td class="red">.3.87</td>
+                    </tr>
+                    <tr>
+                      <td><a class="links">S&P BSE SENSEX Next 50</a></td>
+                      <td>22,087.19</td>
+                      <td class="red">-606.16</td>
+                      <td class="red">-2.67</td>
+                    </tr>
+                    <tr>
+                      <td><a class="links">S&P BSE 100</a></td>
+                      <td>8,347.45</td>
+                      <td class="red">-321.45</td>
+                      <td class="red">-3.71</td>
+                    </tr>
+                    <tr>
+                      <td><a class="links"> S&P BSE Bharat 22 index</a></td>
+                      <td>20,044.34</td>
+                      <td class="red">-76.73</td>
+                      <td class="red">-3.62</td>
+                    </tr>
+                   
+                  </table>
+                  
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="slideshow">
+        <div class="inner0">
+            <img src="../../assets/bhav.png"  class="img0">
+                      </div>
+       
+            
+        <div class="inner2">
+        <p class="heading1">Presenting a momento to our hon'ble Prime minister of india.</p>
+        <p class="paragraph">Shri Ashishkumar Chauhan,MD CEO,BSE Presenting a momento to our hon'ble Prime Minister of india,Shri Narendra Modi at the launch of inadia internationl Exchange.</p>
+    </div>
+    <div class="lastest">
+        <div class="lastest1">
+            <a href=""><img src="../../assets/bhav.png"  class="img0"></a> 
+        </div>
+        <div class="lastest2">
+            <a href=""><img src="../../assets/bhav.png"  class="img0"></a>
+        </div>
+    </div>
+    </div>
 </div>
-<p>Single level routing works!</p>
-<a routerLink='static/about/contact-us' routerLinkActive='active' class='button'>Contact us</a>
-<br>
-<br>
-<router-outlet></router-outlet>
-<br>
-<br>
-<button class='button' (click)='goPreviousPage()'>&nbsp;&nbsp;<<&nbsp;&nbsp;</button> &nbsp;&nbsp;
-<button class='button' (click)='goForwardPage()'>&nbsp;&nbsp;>>&nbsp;&nbsp;</button>
+
+<div class="biggest">
+    <div class="add"></div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'currency Derivatives')">currency Derivatives</button>
+        <button class="tablinks" onclick="openCity(event, 'Interest Rate Derivatives')">Interest Rate Derivatives</button>
+        <button class="tablinks" onclick="openCity(event, 'Commodity Derivatives')">Commodity Derivatives</button>
+        <button class="tablinks" onclick="openCity(event, 'Equatiy Derivatives')">Equatiy Derivatives</button>
+        <button class="tablinks" onclick="openCity(event, 'Debt')">Debt</button>
+        <button class="tablinks" onclick="openCity(event, 'Market Turnover')">Market Turnover</button>
+      </div>
+      
+      <div id="Currency Derivatives" class="tabcontent">
+        <h3>Currency Derivatives</h3>
+        <p>heloo.</p>
+      </div>
+      
+      <div id="Interest Rate Derivativess" class="tabcontent">
+        <h3>Interest Rate Derivatives</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="Commodity Derivatives" class="tabcontent">
+        <h3>Commodity Derivatives</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <div id="Equatiy Derivatives" class="tabcontent">
+          <h3>"Equatiy Derivatives"</h3>
+          
+      </div>
+      
+      <div id="Debt" class="tabcontent">
+        <h3>"Debt"</h3>
+        
+    </div>
+    <div id="Market Turnover" class="tabcontent">
+        <h3>"Market Turnover"</h3>
+        
+    </div>
+    
+    
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+         
+      
+         <div class="vertical"></div>
+</div>
+
+
+    

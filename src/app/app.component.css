@@ -64,10 +64,15 @@ li a {
   color: white;
 }
 
-li a:hover { cursor: pointer; }
+li a:hover { cursor: pointer; 
+color:red;}
 
 #bse-payment{
   color: #FFFF00;
+}
+
+#bse-payment:hover{
+  color:red;
 }
 /* ---- Above indirect links styles */
 .row {
