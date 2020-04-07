@@ -17,7 +17,16 @@
                 <a class="button">Market Watch</a>
             </div>
         </div>
-        <div id="data-table"></div>
+        <div id="data-table">
+            <tabs>
+                <tab title="Tab 1" active="true">
+                  Content 1
+                </tab>
+                <tab title="Tab 2">
+                  Content 2
+                </tab>
+              </tabs>
+        </div>
     </div>
     <div id="bse" class="internal">
         <div id="bse-news" class="carousel slide" data-ride="carousel">
@@ -27,44 +36,26 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
-            <div id="image-container" class="carousel-inner">
-                <div class="item active">
+            <ng-container *ngFor="let new of news; let i=index" id="image-container" class="carousel-inner"> <!--  -->
+                <div *ngIf="i==0;" class="item active">
                     <div>
-                        <img src="../../assets/bse-logo.png" style="width:100%; height: 300px;">
+                        <img src="{{new.imageUrl}}" style="width:100%; height: 300px;">
                     </div>
                     <div>
-                        <h2>Heading 1</h2>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="../../assets/bse.jpg" style="width:100%; height: 300px;">
-                    </div>
-                    <div>
-                        <h2>Heading 2</h2>
-                        <p></p>
+                        <h2>{{new.heading}}</h2>
+                        <p>{{new.content}}</p>
                     </div>
                 </div>
-                <div class="item">
+                <div *ngIf="i!=0;" class="item">
                     <div>
-                        <img src="../../assets/spbse.png" style="width:100%; height: 300px;">
+                        <img src="{{new.imageUrl}}" style="width:100%; height: 300px;">
                     </div>
                     <div>
-                        <h2>Heading 3</h2>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="../../assets/errorimage.png" style="width:100%; height: 300px;">
-                    </div>
-                    <div>
-                        <h2>Heading 4</h2>
-                        <p></p>
+                        <h2>{{new.heading}}</h2>
+                        <p>{{new.content}}</p>
                     </div>
                 </div>
-            </div>
+            </ng-container>
         </div>
         <div id="bse-startup">
             <div class="bannerbotpad">

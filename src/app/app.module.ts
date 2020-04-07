@@ -13,6 +13,7 @@ import { BSEFooterComponent } from './bsefooter/bsefooter.component';
 import { DirectLinksModule } from './directlinks/directlinks.module';
 import { UtilModule } from './utils/util.module';
 import { MarketService } from './app-services/market.service';
+import { BSENewsService } from './app-services/BSENews.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { MarketService } from './app-services/market.service';
     DirectLinksModule,
     UtilModule
   ],
-  providers: [DatePipe, MarketService],
+  providers: [DatePipe, MarketService, BSENewsService],
   bootstrap: [AppComponent],
   exports: [PageNotFoundComponent]
 })

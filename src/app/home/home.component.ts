@@ -5,6 +5,8 @@ import Links from './Links.json';
 import { Chart } from "chart.js";
 import { GraphComponent } from '../utils/graph/graph.component';
 import { MarketService } from '../app-services/market.service';
+import { BSENews } from '../app-models/BSENews.model';
+import { BSENewsService } from '../app-services/BSENews.service';
 
 @Component({
     selector: 'home-component',
@@ -19,13 +21,15 @@ export class HomeComponent {
     private marketStatus: String;
     private graphSlideIndex;
     private newsSlideIndex;
+    private news: BSENews[];
 
     title = "Ng7ChartJs By DotNet Techy";
     LineChart = [];
 
     constructor(private appNavigation: Location,
                 private datePipe: DatePipe,
-                private marketServ: MarketService) {}
+                private marketServ: MarketService,
+                private newsServ: BSENewsService) {}
 
     goPreviousPage() {
         this.appNavigation.back();
@@ -49,6 +53,8 @@ export class HomeComponent {
         } else {
             this.marketStatus = 'Close';
         }
+
+        this.news = this.newsServ.getLatestNews();
     }
 
 }
