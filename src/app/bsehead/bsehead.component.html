@@ -5,12 +5,14 @@
         </a>
     </div>
     <div class="div4">
-        <img src="../../assets/spbse.png" class="img2">
+        <div class="sp-logo">
+            <img src="../../assets/spbse.png" class="img2">
+        </div>
         <div class="rose">
             <ul>
-                <li class="num">29,815.49</li>
-                <li class="num1">-313.18-0.44%</li>
-                <li class="num2">27 March20|16:00|<span style="color:red; font-weight: bold;">close</span></li>
+                <li class="num">{{indexValue | currency:'INR'}}</li>
+                <li class="num1">-313.18 - {{percentChange}}%</li>
+                <li class="num2">{{date}}|{{time}}|<span id="status">{{marketStatus}}</span></li>
             </ul>
         </div>
     </div>
@@ -18,9 +20,11 @@
         <p class="para0">Get Quote</p>
         <div class="search-container">
             <form action="/action_page.php">
-                <input type="text" placeholder="Enter Security Name/code/id/isin" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-
+                <span id="search-icon">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Enter Security Name/code/id/isin" name="search" id="search-box">
+                </span>
+                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
                 <select id="cars">
                     <optgroup label="Equity">
                         <option value="equity">Equity</option>

@@ -10,6 +10,8 @@ export class MarketService {
     
     private day;
     private time;
+    private indexValue: number;
+    private percentChange: number;
     
 
     constructor(private datePipe: DatePipe) {}
@@ -27,5 +29,13 @@ export class MarketService {
         } else {
             return true;
         }
+    }
+
+    getIndexValue(): number {
+        return this.indexValue = 29815.49;
+    }
+
+    getPercentangeChange(): number {
+        return this.percentChange = 0.44;
     }
 }
