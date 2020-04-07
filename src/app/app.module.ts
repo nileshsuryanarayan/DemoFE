@@ -14,6 +14,7 @@ import { DirectLinksModule } from './directlinks/directlinks.module';
 import { UtilModule } from './utils/util.module';
 import { MarketService } from './app-services/market.service';
 import { BSENewsService } from './app-services/BSENews.service';
+import { UtilService } from './app-services/Util.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { BSENewsService } from './app-services/BSENews.service';
     DirectLinksModule,
     UtilModule
   ],
-  providers: [DatePipe, MarketService, BSENewsService],
+  providers: [DatePipe, MarketService, BSENewsService, UtilService],
   bootstrap: [AppComponent],
   exports: [PageNotFoundComponent]
 })

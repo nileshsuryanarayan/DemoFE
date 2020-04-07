@@ -1,6 +1,7 @@
 div.head {
     overflow: hidden;
     position: relative;
+    background-color: #10486b;
   }
   
   div.head ul.tabs {
@@ -11,27 +12,31 @@ div.head {
   }
   
   div.head ul.tabs li.tab {
-    background-color: #F0F0F0;
+    background-color: #10486b;
     display: inline-block;
-    padding: 20px;
+    padding: 20px 10px;
   }
   
   div.head ul.tabs li.tab:hover {
-    background-color: #E8E8E8;
+    text-decoration: none;
+    cursor: pointer;
   }
   
   div.head ul.tabs li.tab.active {
-    background-color: #E0E0E0;
-  }
-  
-  div.toolbar {
-    float: right;
-    padding: 20px;
-    position: absolute;
+    background-color: #EE7939;
   }
 
   .pane {
     background-color: #E0E0E0;
     padding: 20px;
     width: 100%;
+  }
+
+  a{
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+    cursor: pointer;
   }

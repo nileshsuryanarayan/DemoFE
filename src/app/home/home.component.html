@@ -19,13 +19,10 @@
         </div>
         <div id="data-table">
             <tabs>
-                <tab title="Tab 1" active="true">
-                  Content 1
+                <tab *ngFor="let tab of gainerLoser" title="{{tab.head}}" active="{{tab.isActive}}">
+                  {{tab.content}}
                 </tab>
-                <tab title="Tab 2">
-                  Content 2
-                </tab>
-              </tabs>
+            </tabs>
         </div>
     </div>
     <div id="bse" class="internal">

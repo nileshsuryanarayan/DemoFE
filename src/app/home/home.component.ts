@@ -2,11 +2,11 @@ import { Component, ElementRef } from "@angular/core";
 import { Location, DatePipe } from '@angular/common';
 import { Menu } from '../app-models/Menu.model';
 import Links from './Links.json';
-import { Chart } from "chart.js";
-import { GraphComponent } from '../utils/graph/graph.component';
 import { MarketService } from '../app-services/market.service';
 import { BSENews } from '../app-models/BSENews.model';
 import { BSENewsService } from '../app-services/BSENews.service';
+import { Tab } from '../app-models/Tab.model';
+import { UtilService } from '../app-services/Util.service';
 
 @Component({
     selector: 'home-component',
@@ -22,6 +22,7 @@ export class HomeComponent {
     private graphSlideIndex;
     private newsSlideIndex;
     private news: BSENews[];
+    private gainerLoser: Tab[];
 
     title = "Ng7ChartJs By DotNet Techy";
     LineChart = [];
@@ -29,7 +30,8 @@ export class HomeComponent {
     constructor(private appNavigation: Location,
                 private datePipe: DatePipe,
                 private marketServ: MarketService,
-                private newsServ: BSENewsService) {}
+                private newsServ: BSENewsService,
+                private utilServ: UtilService) {}
 
     goPreviousPage() {
         this.appNavigation.back();
@@ -55,6 +57,8 @@ export class HomeComponent {
         }
 
         this.news = this.newsServ.getLatestNews();
+
+        this.gainerLoser = this.utilServ.getGainLoseTabs();
     }
 
 }
