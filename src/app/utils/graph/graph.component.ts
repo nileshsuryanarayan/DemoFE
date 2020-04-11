@@ -15,6 +15,8 @@ export class GraphComponent {
 
   @ViewChild("customChart", null) chart: ElementRef;
 
+  @Input() graphMeta: Graph;
+
   LineChart = [];
   myChartData: Graph;
   isScaleBeginAtZero = true;
@@ -22,8 +24,14 @@ export class GraphComponent {
   constructor(private grpServ: GraphService) {}
 
   ngOnInit() {
+
     
-    this.myChartData = this.grpServ.getChartData();
+  }
+
+  ngAfterViewInit() {
+    console.log(this.graphMeta);
+    
+    this.myChartData = this.graphMeta; // this.grpServ.getChartData();
     // Line chart:
     this.LineChart = new Chart(this.chart.nativeElement.id, {
       type: this.myChartData.chartType,

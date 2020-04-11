@@ -1,5 +1,7 @@
+<div class="row">
 <ul *ngIf="menus">
     <li *ngFor="let menu of menus">
         <a href="{{menu.route}}" id="{{menu.id}}">{{menu.menuName}}</a>
     </li>
 </ul>
+</div>

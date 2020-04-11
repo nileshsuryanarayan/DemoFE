@@ -1,7 +1,9 @@
 .row {
     height: fit-content;
+    margin-left: 15px;
 }
 ul {
+    width: 100%;
     list-style-type: none;
     margin: auto;
     padding-left: 10px;

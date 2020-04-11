@@ -7,6 +7,8 @@ import { BSENews } from '../app-models/BSENews.model';
 import { BSENewsService } from '../app-services/BSENews.service';
 import { Tab } from '../app-models/Tab.model';
 import { UtilService } from '../app-services/Util.service';
+import { Graph } from '../app-models/Graph.model';
+import { GraphService } from '../utils/graph/graph.service';
 
 @Component({
     selector: 'home-component',
@@ -23,6 +25,8 @@ export class HomeComponent {
     private newsSlideIndex;
     private news: BSENews[];
     private gainerLoser: Tab[];
+    private graphOne: Graph;
+    private graphTwo: Graph;
 
     title = "Ng7ChartJs By DotNet Techy";
     LineChart = [];
@@ -31,7 +35,8 @@ export class HomeComponent {
                 private datePipe: DatePipe,
                 private marketServ: MarketService,
                 private newsServ: BSENewsService,
-                private utilServ: UtilService) {}
+                private utilServ: UtilService,
+                private graphServ: GraphService) {}
 
     goPreviousPage() {
         this.appNavigation.back();
@@ -59,6 +64,11 @@ export class HomeComponent {
         this.news = this.newsServ.getLatestNews();
 
         this.gainerLoser = this.utilServ.getGainLoseTabs();
+
+        this.graphOne = this.graphServ.getChartData();
+        this.graphTwo = this.graphServ.getChartDataTwo();
+        // console.log(this.graphOne);
+        // console.log(this.graphTwo);
     }
 
 }

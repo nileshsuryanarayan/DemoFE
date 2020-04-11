@@ -3,7 +3,8 @@ import { Graph } from 'src/app/app-models/Graph.model';
 
 @Injectable()
 export class GraphService {
-  graphData: Graph;
+  graphOneData: Graph;
+  graphTwoData: Graph;
   chartdata = [];
   dataLabels = [];
   lineTension = 0;
@@ -15,7 +16,7 @@ export class GraphService {
 
   getChartData(): Graph {
     // return the complete chart related details
-    this.graphData = {
+    this.graphOneData = {
         chartType: 'line',
         chartLabel: 'Number of Items Sold in Months',
         chartTitle: 'Line Chart',
@@ -117,7 +118,114 @@ export class GraphService {
             }
         }
     };
-    return this.graphData;
+    return this.graphOneData;
+  }
+
+  getChartDataTwo(): Graph {
+    // return the complete chart related details
+    this.graphTwoData = {
+        chartType: 'bar',
+        chartLabel: 'Number of Items Sold in Months',
+        chartTitle: 'Bar Chart',
+        displayChartTitle: true,
+        data: {
+            dataLabels: [
+                "","","","","","","","","Nine","",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Nine",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Nine",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Nine",
+            "",
+            "",
+            ""],
+            dataSet: {
+                chartData: [9,
+                    7,
+                    3,
+                    5,
+                    2,
+                    10,
+                    15,
+                    16,
+                    19,
+                    3,
+                    1,
+                    9,
+                    9,
+                    7,
+                    3,
+                    5,
+                    2,
+                    10,
+                    15,
+                    16,
+                    19,
+                    3,
+                    1,
+                    9,
+                    9,
+                    7,
+                    3,
+                    5,
+                    2,
+                    10,
+                    15,
+                    16,
+                    19,
+                    3,
+                    1,
+                    9,
+                    9,
+                    7,
+                    3,
+                    5,
+                    2,
+                    10,
+                    15,
+                    16,
+                    19,
+                    3,
+                    1,
+                    9],
+                isFill: false,
+                lineTension: 0,
+                borderColor: 'blue',
+                borderWidth: 1
+            }
+        }
+    };
+    return this.graphTwoData;
   }
 
   

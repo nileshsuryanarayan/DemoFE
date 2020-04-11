@@ -3,19 +3,37 @@
 </div>
 <div id="home-container">
     <div id="market" class="internal">
-        <div id="graph">
-            <div class="graph-slide">
+        <div id="graph" class="carousel slide" data-ride="carousel">
+            <div class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+            <div class="item active">
                 <div id="graph-slid-head">
                     <span id="market-logo" class="block">&nbsp;</span>
                     <span id="date-time" class="text-right block">{{date}}&nbsp;|&nbsp;{{time}}&nbsp;|&nbsp;{{marketStatus}}</span>
                 </div>
-                <graph></graph>
+                <graph [graphMeta]="graphOne"></graph>
+                <div class="slider-bottom">
+                    <a class="button">Sensex View</a>
+                    &nbsp;
+                    <a class="button">Market Watch</a>
+                </div>
             </div>
-            <div class="slider-bottom">
-                <a class="button">Sensex View</a>
-                &nbsp;
-                <a class="button">Market Watch</a>
+            <div class="item">
+                <div id="graph-slid-head">
+                    <span id="market-logo" class="block">&nbsp;</span>
+                    <span id="date-time" class="text-right block">{{date}}&nbsp;|&nbsp;{{time}}&nbsp;|&nbsp;{{marketStatus}}</span>
+                </div>
+                <!-- <graph [graphMeta]="graphTwo"></graph> -->
+                <div class="slider-bottom">
+                    <a class="button">Graph 2</a>
+                    &nbsp;
+                    <a class="button">Graph 2</a>
+                </div>
             </div>
+        </div>
         </div>
         <div id="data-table">
             <tabs>
@@ -67,4 +85,12 @@
             </div>
         </div>
     </div>
+</div>
+<div class="row bottom">
+   <div class="market-data">
+       <!-- 75% -->
+   </div> 
+   <div class="bse-trending">
+       <!-- 25% -->
+   </div>
 </div>
