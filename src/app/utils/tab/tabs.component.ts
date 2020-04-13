@@ -1,4 +1,4 @@
-import { Component, ContentChildren, QueryList } from '@angular/core';
+import { Component, ContentChildren, QueryList, Input } from '@angular/core';
 import { TabComponent } from './tab.component';
 
 @Component({
@@ -8,6 +8,9 @@ import { TabComponent } from './tab.component';
 })
 export class TabsComponent {
   @ContentChildren(TabComponent) tabs: QueryList<TabComponent>;
+
+  @Input() class: string;
+  @Input() fontStyle: string;
 
   select(tab: TabComponent) {
     this.tabs.toArray().forEach(tab => {

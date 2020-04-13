@@ -36,7 +36,7 @@
         </div>
         </div>
         <div id="data-table">
-            <tabs>
+            <tabs class="head-bg-blue" fontStyle="color-white">
                 <tab *ngFor="let tab of gainerLoser" title="{{tab.head}}" active="{{tab.isActive}}">
                   {{tab.content}}
                 </tab>
@@ -89,8 +89,18 @@
 <div class="row bottom">
    <div class="market-data">
        <!-- 75% -->
+       <div id="derivatives">
+           <derivatives></derivatives>
+       </div>
+       <div id="statistics">
+           <statistics></statistics>
+       </div>
+       <div id="qrtlyresults" class="container">
+           <quarterly-results></quarterly-results>
+       </div>
    </div> 
-   <div class="bse-trending">
-       <!-- 25% -->
-   </div>
+   <!-- <div class="bse-trending">
+        25% 
+       <div></div>
+   </div> -->
 </div>

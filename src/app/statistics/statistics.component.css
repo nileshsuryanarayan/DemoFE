@@ -1,0 +1,50 @@
+div.statistics {
+    width: 49%;
+    /* height: fit-content; */
+    display: inline-block;
+    background-color: white;
+}
+
+#market {
+    float: left;
+}
+
+#listing {
+    float: right;
+}
+
+h4 {
+    width: fit-content;
+    font-size: 17px;
+    color: #0089D0;
+    font-weight: bold;
+    border-bottom: 1px solid #ee7939 !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0px;
+    border-radius: 0px;
+    border: none;
+    box-shadow: -2px 2px 5px #bebebe;
+    padding: 10px 0px;
+}
+
+table {
+    width: 100%;
+    /* border: 1px solid tomato; */
+    color: black;
+}
+
+td {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 5px;
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

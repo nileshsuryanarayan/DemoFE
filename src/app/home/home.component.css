@@ -114,15 +114,15 @@ a img {
 }
 
 .bottom {
-    height: 500px;
+    height: fit-content;
     background-color: white;
 }
 
 .market-data {
     display: inline-block;
     width: 70%;
-    height: 300px;
-    background-color: khaki;
+    /* height: 300px; */
+    /* background-color: khaki; */
     margin: 2%;
 }
 
@@ -132,4 +132,27 @@ a img {
     height: 300px;
     background-color: lightcoral;
     margin: 2%;
+}
+
+div#derivatives {
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+}
+
+div#statistics {
+    width: 100%;
+    /* height: fit-content; */
+    background-color: white;
+    text-align: justify;
+    padding: 0px;
+    overflow: auto;
+}
+
+div#qrtlyresults {
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
 }

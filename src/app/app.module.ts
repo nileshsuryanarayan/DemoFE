@@ -15,6 +15,9 @@ import { UtilModule } from './utils/util.module';
 import { MarketService } from './app-services/market.service';
 import { BSENewsService } from './app-services/BSENews.service';
 import { UtilService } from './app-services/Util.service';
+import { DerivativesComponent } from './derivatives/derivatives.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { QtrlyResultsComponent } from './quarterlyresults/qtrlyresults.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { UtilService } from './app-services/Util.service';
     LanguageComponent,
     GroupWebsitesComponent,
     BSEHeadComponent,
-    BSEFooterComponent
+    BSEFooterComponent,
+    DerivativesComponent,
+    StatisticsComponent,
+    QtrlyResultsComponent
   ],
   imports: [
     AppRoutingModule,
