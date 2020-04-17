@@ -1,5 +1,8 @@
 import { Injectable } from "@angular/core";
 import { BSENews } from '../app-models/BSENews.model';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import * as env from '../../environments/environment';
 
 @Injectable()
 export class BSENewsService {
@@ -8,31 +11,11 @@ export class BSENewsService {
      */
 
      private bseNews: BSENews[];
+     private newsServURL: string = env.environment.newsWSUrl; // "../../assets/data/news.data.json"
 
-     getLatestNews(): BSENews[]{
-        this.bseNews = [
-            {
-                imageUrl: '../../assets/bse-logo.png',
-                heading: 'Heading 1',
-                content: ''
+     constructor(private http: HttpClient) {}
 
-            },
-            {
-                imageUrl: '../../assets/bse.jpg',
-                heading: 'Heading 2',
-                content: ''
-            },
-            {
-                imageUrl: '../../assets/spbse.png',
-                heading: 'Heading 3',
-                content: ''
-            },
-            {
-                imageUrl: '../../assets/errorimage.png',
-                heading: 'Heading 4',
-                content: ''
-            }
-        ]
-        return this.bseNews;
+     getNews(): Observable<BSENews[]> {
+        return this.http.get<BSENews[]>(this.newsServURL);
      }
 }

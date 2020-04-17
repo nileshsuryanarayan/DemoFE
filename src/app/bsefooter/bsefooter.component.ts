@@ -13,9 +13,12 @@ export class BSEFooterComponent {
     private time;
     private zone;
 
+    private myDate: Date;
+
     constructor (private datePipe: DatePipe) {}
 
     ngOnInit() {
+        this.myDate = new Date();
         this.date = this.datePipe.transform(new Date(), 'd MMM y');
         this.time = this.datePipe.transform(new Date(), 'h:mm');
         this.zone = this.datePipe.transform(new Date(), 'z');

@@ -18,6 +18,7 @@ import { UtilService } from './app-services/Util.service';
 import { DerivativesComponent } from './derivatives/derivatives.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { QtrlyResultsComponent } from './quarterlyresults/qtrlyresults.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { QtrlyResultsComponent } from './quarterlyresults/qtrlyresults.component
     CommonModule,
     StaticModule,
     DirectLinksModule,
-    UtilModule
+    UtilModule,
+    HttpClientModule
   ],
   providers: [DatePipe, MarketService, BSENewsService, UtilService],
   bootstrap: [AppComponent],

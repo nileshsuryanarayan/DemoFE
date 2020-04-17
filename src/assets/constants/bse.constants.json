@@ -1,0 +1,10 @@
+{
+    "marketOpeningTime": {
+        "hours": 9,
+        "minutes": 0
+    },
+    "marketClosingTime": {
+        "hours": 13,
+        "minutes": 30
+    }
+}

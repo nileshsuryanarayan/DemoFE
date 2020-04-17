@@ -1,0 +1,23 @@
+[
+    {
+        "imageUrl": "../../assets/bse-logo.png",
+        "heading": "Heading 1",
+        "content": ""
+
+    },
+    {
+        "imageUrl": "../../assets/bse.jpg",
+        "heading": "Heading 2",
+        "content": ""
+    },
+    {
+        "imageUrl": "../../assets/spbse.png",
+        "heading": "'Heading 3'",
+        "content": ""
+    },
+    {
+        "imageUrl": "../../assets/errorimage.png",
+        "heading": "Heading 4",
+        "content": ""
+    }
+]

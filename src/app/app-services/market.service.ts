@@ -1,31 +1,45 @@
 import { Injectable } from "@angular/core";
 import { DatePipe } from '@angular/common';
+import * as market from '../../assets/constants/bse.constants.json';
 
 @Injectable()
 export class MarketService {
 
     Weekend: String[] = ['Saturday','Sunday']; // constant
-    OpeningTime: Date = new Date('9:00 AM');
-    ClosingTime: Date = new Date('3:00 PM');
     
     private day;
-    private time;
+    private timeHours;
+    private timeMinutes;
     private indexValue: number;
     private percentChange: number;
+
+    private openingHours: number;
+    private closingHours: number;
+    private openingMinutes: number;
+    private closingMinutes: number;
+    private marketOpenTime: Date;
+    private marketCloseTime: Date;
     
 
     constructor(private datePipe: DatePipe) {}
 
-    getMarketStatus(): boolean{
-
+    getMarketStatus(): boolean {
+        debugger;
         this.day = this.datePipe.transform(new Date(), 'EEEE');
-        this.time = this.datePipe.transform(new Date(), 'h:mm');
+        this.timeHours = this.datePipe.transform(new Date(), 'h');
+        this.timeMinutes = this.datePipe.transform(new Date(), 'mm');
+
+        this.openingHours = market.marketOpeningTime.hours;
+        this.openingMinutes = market.marketOpeningTime.minutes;
+        this.marketOpenTime = new Date(null, null, null, this.openingHours, this.openingMinutes);
+        this.marketCloseTime = new Date(null, null, null, this.closingHours, this.closingMinutes)
 
         if(this.Weekend.includes(this.day)) {
             return false;
-        } else if (this.time < this.OpeningTime || this.time > this.ClosingTime) {
+        } else if ((this.timeHours > this.marketOpenTime.getHours() && this.timeMinutes > this.marketOpenTime.getMinutes())
+                || (this.timeHours < this.marketCloseTime.getHours() && this.timeMinutes < this.marketCloseTime.getMinutes())) {
             // TODO: this syntax isnt't correct
-            return false;
+            return true;
         } else {
             return true;
         }

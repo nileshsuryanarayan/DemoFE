@@ -9,6 +9,7 @@ import { Tab } from '../app-models/Tab.model';
 import { UtilService } from '../app-services/Util.service';
 import { Graph } from '../app-models/Graph.model';
 import { GraphService } from '../utils/graph/graph.service';
+import * as market from '../../assets/constants/bse.constants.json';
 
 @Component({
     selector: 'home-component',
@@ -27,6 +28,13 @@ export class HomeComponent {
     private gainerLoser: Tab[];
     private graphOne: Graph;
     private graphTwo: Graph;
+    demo: Date;
+    private openingHours: number;
+    private closingHours: number;
+    private openingMinutes: number;
+    private closingMinutes: number;
+    private marketOpenTime: Date;
+    private marketCloseTime: Date;
 
     title = "Ng7ChartJs By DotNet Techy";
     LineChart = [];
@@ -54,14 +62,21 @@ export class HomeComponent {
         this.date = this.datePipe.transform(new Date(), 'dd MMM yy');
         this.time = this.datePipe.transform(new Date(), 'h:mm');
 
+        this.demo = new Date(null, null, null, 15, 0);
+        console.log('Created date');
+        console.log(this.demo.getHours()); // this.datePipe.transform(this.demo, 'hh')
+
         //market open-close status
+        debugger
         if(this.marketServ.getMarketStatus()){
             this.marketStatus = 'Open';
         } else {
             this.marketStatus = 'Close';
         }
 
-        this.news = this.newsServ.getLatestNews();
+        // this.news = this.newsServ.getLatestNews();
+        this.newsServ.getNews()
+        .subscribe(data => this.news = data);
 
         this.gainerLoser = this.utilServ.getGainLoseTabs();
 
@@ -69,6 +84,7 @@ export class HomeComponent {
         this.graphTwo = this.graphServ.getChartDataTwo();
         // console.log(this.graphOne);
         // console.log(this.graphTwo);
+   
     }
 
 }
