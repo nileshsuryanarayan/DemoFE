@@ -63,8 +63,8 @@ export class HomeComponent {
         this.time = this.datePipe.transform(new Date(), 'h:mm');
 
         this.demo = new Date(null, null, null, 15, 0);
-        console.log('Created date');
-        console.log(this.demo.getHours()); // this.datePipe.transform(this.demo, 'hh')
+        // console.log('Created date');
+        // console.log(this.demo.getHours()); // this.datePipe.transform(this.demo, 'hh')
 
         //market open-close status
         debugger

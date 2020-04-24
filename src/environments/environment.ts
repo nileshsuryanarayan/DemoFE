@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiBaseUrl: 'http://localhost:3000/',
-  newsWSUrl: '../../assets/data/news.data.json'
+  newsWSUrl: '../../assets/data/news.data.json',
+  marketService: '../../assets/data/quotes.data.json' // http://localhost:8080/market
 };
 
 /*

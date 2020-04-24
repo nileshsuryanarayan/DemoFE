@@ -51,7 +51,7 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
-            <ng-container *ngFor="let new of news; let i=index" id="image-container" class="carousel-inner"> <!--  -->
+            <ng-container *ngFor="let new of news; let i=index" id="image-container" class="carousel-inner">
                 <div *ngIf="i==0;" class="item active">
                     <div>
                         <img src="{{new.imageUrl}}" style="width:100%; height: 300px;">

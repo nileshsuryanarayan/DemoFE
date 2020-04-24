@@ -19,11 +19,25 @@
     <div class="div3">
         <p class="para0">Get Quote</p>
         <div class="search-container">
-            <form action="/action_page.php">
                 <span id="search-icon">
                     <i class="fa fa-search"></i>
-                    <input type="text" placeholder="Enter Security Name/code/id/isin" name="search" id="search-box">
+                    <input type="text" placeholder="Enter Security Name/code/id/isin"
+                     name="search" id="search-box" (keypress)="getQuote($event)" 
+                     [value]="quote" (input)="quote = $event.target.value">
                 </span>
+                <ul *ngIf="display" class="bse-dropdown-menu">
+                    <li *ngFor="let quote of quotes" class="list-item">
+                        <a class="item">
+                            <span style="margin: 0px;">
+                                {{quote.name}}
+                            </span>
+                            <br>
+                            <span style="margin: 10px">
+                                {{quote.symbol | uppercase}}&nbsp;&nbsp;&nbsp;INE001A01036&nbsp;&nbsp;&nbsp;{{quote.regNo}}
+                            </span>
+                        </a>
+                    </li>
+                </ul>
                 <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
                 <select id="cars">
                     <optgroup label="Equity">
@@ -31,7 +45,6 @@
                         <option value="derivatives">Derivatives</option>
                     </optgroup>
                 </select>
-            </form>
         </div>
     </div>
 </div>

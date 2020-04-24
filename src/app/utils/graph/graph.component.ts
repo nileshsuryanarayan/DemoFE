@@ -29,7 +29,7 @@ export class GraphComponent {
   }
 
   ngAfterViewInit() {
-    console.log(this.graphMeta);
+    // console.log(this.graphMeta);
     
     this.myChartData = this.graphMeta; // this.grpServ.getChartData();
     // Line chart:

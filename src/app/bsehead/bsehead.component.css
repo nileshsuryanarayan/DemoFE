@@ -173,3 +173,46 @@ li {
 i {
   color: #a8acbc;
 }
+
+.bse-dropdown-menu {
+  width: 400px;
+  height: fit-content;
+  max-width: 400px;
+  list-style: none;
+  background-color: #FDFDFD;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  position: absolute;
+  z-index: 1000;
+  display: block;
+  padding: 0px;
+  color: #0089D0;
+}
+
+.list-item {
+  padding: 10px 0px;
+}
+
+.list-item:hover {
+  background-color: #338CDF;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #59AAF4, #338CDF);
+}
+
+.list-item:hover .item {
+  color: white;
+  text-decoration: none;
+}
+
+.item {
+  color: #0089D0;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+.item  span {
+  /* margin: 5px; */
+}
