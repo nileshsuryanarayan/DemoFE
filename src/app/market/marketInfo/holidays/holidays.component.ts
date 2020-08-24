@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import Links from './Links.json';
 import { Menu } from 'src/app/app-models/Menu.model';
 
@@ -7,7 +7,7 @@ import { Menu } from 'src/app/app-models/Menu.model';
     templateUrl: './holidays.component.html',
     styleUrls: ['./holidays.component.css']
 })
-export class HolidaysComponent {
+export class HolidaysComponent implements OnInit {
 
     Menus: Menu[];
 

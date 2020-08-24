@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { DirectLinksComponent } from './directlinks.component';
 import { DirectLinksRoutingModule } from './directlinks-routing.module';
 import { BrowserModule } from '@angular/platform-browser';

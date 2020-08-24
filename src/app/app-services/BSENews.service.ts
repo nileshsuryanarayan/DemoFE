@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { BSENews } from '../app-models/BSENews.model';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
@@ -11,7 +11,7 @@ export class BSENewsService {
      */
 
      private bseNews: BSENews[];
-     private newsServURL: string = env.environment.newsWSUrl; // "../../assets/data/news.data.json"
+     private newsServURL: string = env.environment.newsWSUrl; // '../../assets/data/news.data.json'
 
      constructor(private http: HttpClient) {}
 

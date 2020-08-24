@@ -1,19 +1,19 @@
-import { Component, Input, ElementRef, ViewChild } from "@angular/core";
-import { Sensex } from "src/app/app-models/SensexModel";
+import { Component, Input, ElementRef, ViewChild, OnInit, AfterViewInit } from '@angular/core';
+import { Sensex } from 'src/app/app-models/SensexModel';
 // import * as chart from 'chart.js';
-import { Chart } from "chart.js";
+import { Chart } from 'chart.js';
 import { Graph } from 'src/app/app-models/Graph.model';
 import { GraphService } from './graph.service';
 
 @Component({
-  selector: "graph",
-  templateUrl: "./graph.component.html",
-  styleUrls: ["./graph.component.css"]
+  selector: 'graph',
+  templateUrl: './graph.component.html',
+  styleUrls: ['./graph.component.css']
 })
-export class GraphComponent {
+export class GraphComponent implements OnInit, AfterViewInit {
   // @Input() lineData: Sensex[];
 
-  @ViewChild("customChart", null) chart: ElementRef;
+  @ViewChild('customChart', null) chart: ElementRef;
 
   @Input() graphMeta: Graph;
 
@@ -25,12 +25,10 @@ export class GraphComponent {
 
   ngOnInit() {
 
-    
   }
 
   ngAfterViewInit() {
     // console.log(this.graphMeta);
-    
     this.myChartData = this.graphMeta; // this.grpServ.getChartData();
     // Line chart:
     this.LineChart = new Chart(this.chart.nativeElement.id, {

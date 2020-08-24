@@ -1,18 +1,18 @@
 export interface Graph {
-  chartType: String;
-  chartLabel: String;
-  chartTitle: String;
-  displayChartTitle: Boolean;
+  chartType: string;
+  chartLabel: string;
+  chartTitle: string;
+  displayChartTitle: boolean;
   data: Data;
 }
 
 export interface Data {
-  dataLabels: String[];
+  dataLabels: string[];
   dataSet: {
     chartData: number[];
-    isFill: Boolean;
+    isFill: boolean;
     lineTension: number;
-    borderColor: String;
+    borderColor: string;
     borderWidth: number;
   };
 }

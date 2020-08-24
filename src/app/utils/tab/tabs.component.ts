@@ -1,4 +1,4 @@
-import { Component, ContentChildren, QueryList, Input } from '@angular/core';
+import { Component, ContentChildren, QueryList, Input, AfterContentInit } from '@angular/core';
 import { TabComponent } from './tab.component';
 
 @Component({
@@ -6,22 +6,22 @@ import { TabComponent } from './tab.component';
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.css']
 })
-export class TabsComponent {
+export class TabsComponent implements AfterContentInit {
   @ContentChildren(TabComponent) tabs: QueryList<TabComponent>;
 
   @Input() class: string;
   @Input() fontStyle: string;
 
   select(tab: TabComponent) {
-    this.tabs.toArray().forEach(tab => {
+    this.tabs.toArray().forEach(data => {
       tab.active = false;
     });
     tab.active = true;
   }
 
   ngAfterContentInit() {
-    let actives = this.tabs.filter(tab => tab.active);
+    const actives = this.tabs.filter(tab => tab.active);
 
-    if (actives.length === 0) this.select(this.tabs.first);
+    if (actives.length === 0) { this.select(this.tabs.first); }
   }
 }

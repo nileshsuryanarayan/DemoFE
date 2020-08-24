@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { Menu } from 'src/app/app-models/Menu.model';
 import Links from './Links.json';
@@ -8,14 +8,14 @@ import Links from './Links.json';
     templateUrl: './contactus.component.html',
     styleUrls: ['./contactus.component.css']
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
 
     Menus: Menu[];
 
     constructor(private appNavigation: Location) {}
 
     ngOnInit() {
-        this.Menus = Links; 
+        this.Menus = Links;
         // console.log(NoticesLinks);
     }
 

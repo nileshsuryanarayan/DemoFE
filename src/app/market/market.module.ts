@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { MarketRoutingModule } from './market-routing.module';
 import { NoticesComponent } from './marketInfo/notices/notices.component';
 

@@ -1,4 +1,4 @@
-import { Component, HostListener } from "@angular/core";
+import { Component, HostListener, OnInit } from '@angular/core';
 // import {  }
 
 @Component({
@@ -6,7 +6,7 @@ import { Component, HostListener } from "@angular/core";
     templateUrl: './groupwebsites.component.html',
     styleUrls: ['./groupwebsites.component.css']
 })
-export class GroupWebsitesComponent {
+export class GroupWebsitesComponent implements OnInit {
     display: boolean;
 
     ngOnInit() {
@@ -14,8 +14,8 @@ export class GroupWebsitesComponent {
     }
 
     /**
-     * 
-     * @param $event 
+     *
+     * @param $event
      * @description listens to the respective element's click event
      */
     displayDropdown($event) {
@@ -26,12 +26,12 @@ export class GroupWebsitesComponent {
 
     /**
      * @param event listens to document object
-     * @description This method listens to document object, 
+     * @description This method listens to document object,
      *              if user clicks anywhere on the screen except
      *              the button or the displayed ul, then the ul
      *              will be hidden
      */
-    @HostListener('document:click', ['$event']) onDocumentClick(event) { 
+    @HostListener('document:click', ['$event']) onDocumentClick(event) {
         this.display = false;
     }
 }

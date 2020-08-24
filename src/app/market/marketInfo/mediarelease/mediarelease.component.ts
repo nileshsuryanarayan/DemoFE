@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import Links from './Links.json';
 import { Menu } from 'src/app/app-models/Menu.model';
 
@@ -7,12 +7,12 @@ import { Menu } from 'src/app/app-models/Menu.model';
     templateUrl: './mediarelease.component.html',
     styleUrls: ['./mediarelease.component.css']
 })
-export class MediaReleaseComponent {
+export class MediaReleaseComponent implements OnInit {
 
     Menus: Menu[];
 
     ngOnInit() {
-        this.Menus = Links; 
+        this.Menus = Links;
         // console.log(NoticesLinks);
     }
 }

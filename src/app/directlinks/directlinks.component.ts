@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 import { Menu } from '../app-models/Menu.model';
 
 @Component({

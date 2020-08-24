@@ -1,4 +1,4 @@
-export interface Stock extends Object {
+export interface Stock extends object {
     symbol: string;
     name: string;
     parent?: string;

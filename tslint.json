@@ -1,6 +1,7 @@
 {
   "extends": "tslint:recommended",
   "rules": {
+    "align": true,
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
@@ -18,7 +19,8 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "",
+      "camelCase",
       "kebab-case"
     ],
     "import-blacklist": [
@@ -43,7 +45,7 @@
         ]
       }
     ],
-    "no-consecutive-blank-lines": false,
+    "no-consecutive-blank-lines": true,
     "no-console": [
       true,
       "debug",
@@ -58,7 +60,7 @@
       "ignore-params"
     ],
     "no-non-null-assertion": true,
-    "no-redundant-jsdoc": true,
+    "no-redundant-jsdoc": false,
     "no-switch-case-fall-through": true,
     "no-use-before-declare": true,
     "no-var-requires": false,
@@ -73,6 +75,7 @@
       "single"
     ],
     "trailing-comma": false,
+    "no-trailing-whitespace": true,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,

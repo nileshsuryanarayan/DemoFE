@@ -19,7 +19,7 @@ import { DerivativesComponent } from './derivatives/derivatives.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { QtrlyResultsComponent } from './quarterlyresults/qtrlyresults.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { BackendService } from './app-services/BackendService';
 
 @NgModule({

@@ -1,8 +1,8 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'social-icons',
     templateUrl: './socialicons.html',
     styleUrls: ['socialicons.css']
 })
-export class SocialIcons {}
+export class SocialIconsComponent {}

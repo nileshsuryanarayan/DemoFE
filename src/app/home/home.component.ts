@@ -1,4 +1,4 @@
-import { Component, ElementRef } from "@angular/core";
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { Location, DatePipe } from '@angular/common';
 import { Menu } from '../app-models/Menu.model';
 import Links from './Links.json';
@@ -17,12 +17,12 @@ import { BackendService } from '../app-services/BackendService';
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
     private Menus: Menu[];
     private date;
     private time;
-    private marketStatus: String;
+    private marketStatus: string;
     private graphSlideIndex;
     private newsSlideIndex;
     private news: BSENews[];
@@ -37,7 +37,7 @@ export class HomeComponent {
     private marketOpenTime: Date;
     private marketCloseTime: Date;
 
-    title = "Ng7ChartJs By DotNet Techy";
+    title = 'Ng7ChartJs By DotNet Techy';
     LineChart = [];
 
     constructor(private appNavigation: Location,
@@ -68,9 +68,8 @@ export class HomeComponent {
         // console.log('Created date');
         // console.log(this.demo.getHours()); // this.datePipe.transform(this.demo, 'hh')
 
-        //market open-close status
-        debugger
-        if(this.marketServ.getMarketStatus()){
+        // market open-close status
+        if (this.marketServ.getMarketStatus()) {
             this.marketStatus = 'Open';
         } else {
             this.marketStatus = 'Close';
@@ -87,13 +86,13 @@ export class HomeComponent {
         // console.log(this.graphOne);
         // console.log(this.graphTwo);
 
-        console.log("Calling Rest Api...");
+        console.log('Calling Rest Api...');
         this.BEservice.getCapsRestData();
-   
+
     }
 
     getCapsRestData() {
-        console.log("Calling Rest Api...");
+        console.log('Calling Rest Api...');
         this.BEservice.getCapsRestData().subscribe(data => console.log(data));
     }
 

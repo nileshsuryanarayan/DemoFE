@@ -1,12 +1,12 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { Tab } from '../app-models/Tab.model';
 
 @Injectable()
 export class UtilService {
-    
+
     private gainLoseTabs: Tab[];
 
-    getGainLoseTabs(): Tab[]{
+    getGainLoseTabs(): Tab[] {
         this.gainLoseTabs = [
             {
                 head: 'Indices',
@@ -37,7 +37,7 @@ export class UtilService {
                 head: 'Corporate Announcement',
                 content: 'CA content'
             }
-        ]
+        ];
         return this.gainLoseTabs;
     }
 }

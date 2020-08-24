@@ -1,5 +1,5 @@
 export class Tab {
-    head: String;
-    content: String;
+    head: string;
+    content: string;
     isActive?: boolean;
 }

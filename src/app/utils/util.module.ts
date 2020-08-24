@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { GraphComponent } from './graph/graph.component';
 import { GraphService } from './graph/graph.service';
 import { TabsComponent } from './tab/tabs.component';

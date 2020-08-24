@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import { Timestamp } from 'rxjs';
 import { DatePipe } from '@angular/common';
 
@@ -7,7 +7,7 @@ import { DatePipe } from '@angular/common';
     templateUrl: './bsefooter.component.html',
     styleUrls: ['./bsefooter.component.css']
 })
-export class BSEFooterComponent {
+export class BSEFooterComponent implements OnInit {
 
     private date;
     private time;
@@ -15,7 +15,7 @@ export class BSEFooterComponent {
 
     private myDate: Date;
 
-    constructor (private datePipe: DatePipe) {}
+    constructor(private datePipe: DatePipe) {}
 
     ngOnInit() {
         this.myDate = new Date();

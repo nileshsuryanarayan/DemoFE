@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { NoticesComponent } from './notices/notices.component';
 import { MarketInfoRoutingModule } from './marketInfo-routing.module';
 import { MediaReleaseComponent } from './mediarelease/mediarelease.component';
