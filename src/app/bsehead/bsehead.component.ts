@@ -48,12 +48,9 @@ export class BSEHeadComponent {
 
     getQuote($event) {
         $event.stopPropagation();
-        this.display = !this.display;
+        // this.display = !this.display;
         this.quotes = this.marketServ.getQuotes(this.quote)
-        // .subscribe( data => this.quotes = data,
-        //             error => console.log(error));
-        
-        
+        this.quotes != null ? this.display = true : this.display = false ; 
     }
 
     /**

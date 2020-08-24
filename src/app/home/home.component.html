@@ -39,6 +39,8 @@
             <tabs class="head-bg-blue" fontStyle="color-white">
                 <tab *ngFor="let tab of gainerLoser" title="{{tab.head}}" active="{{tab.isActive}}">
                   {{tab.content}}
+                  <br>
+                  <button name="" (onClick)="getCapsRestData" class="button">CAPS REST service</button>
                 </tab>
             </tabs>
         </div>

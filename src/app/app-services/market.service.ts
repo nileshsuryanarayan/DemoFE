@@ -80,6 +80,8 @@ export class MarketService {
    * @param quote string from the search textbox
    */
   getQuotes(quote: string): Stock[] {
+
+    if(quote != "") {  
     this.BEQuotes = this.http
     .get<Stock[]>(env.environment.marketService); // + this.quotesURL
 
@@ -96,5 +98,8 @@ export class MarketService {
     }
     // console.log(this.quotes)
     return this.quotes
+    } else {
+      return null;
+    }
   }
 }

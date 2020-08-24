@@ -10,6 +10,7 @@ import { UtilService } from '../app-services/Util.service';
 import { Graph } from '../app-models/Graph.model';
 import { GraphService } from '../utils/graph/graph.service';
 import * as market from '../../assets/constants/bse.constants.json';
+import { BackendService } from '../app-services/BackendService';
 
 @Component({
     selector: 'home-component',
@@ -44,7 +45,8 @@ export class HomeComponent {
                 private marketServ: MarketService,
                 private newsServ: BSENewsService,
                 private utilServ: UtilService,
-                private graphServ: GraphService) {}
+                private graphServ: GraphService,
+                private BEservice: BackendService) {}
 
     goPreviousPage() {
         this.appNavigation.back();
@@ -84,7 +86,15 @@ export class HomeComponent {
         this.graphTwo = this.graphServ.getChartDataTwo();
         // console.log(this.graphOne);
         // console.log(this.graphTwo);
+
+        console.log("Calling Rest Api...");
+        this.BEservice.getCapsRestData();
    
+    }
+
+    getCapsRestData() {
+        console.log("Calling Rest Api...");
+        this.BEservice.getCapsRestData().subscribe(data => console.log(data));
     }
 
 }
