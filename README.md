@@ -1,3 +1,8 @@
 # DemoFE
 Demo Frontend Application
-- A simple frontend application that will consist of basic CRUD operations
+
+This is a demo Angular application intented only for educational purpose.
+
+Tried to re-create BSE site using Angular 7 - an attempt to polish Angular and Typescript concepts and skills
+
+# No copyright infringement intended!
